@@ -3,23 +3,24 @@ import "./landingPage.css";
 import Hero from "../../sampleImages/dummyImage.png";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Navbar from "../../components/Navbar/Navbar";
+import { motion } from "framer-motion";
 
 function LandingPage() {
-  const [zoom, setZoom] = useState(false);
+  const [showTextEffect, setShowTextEffect] = useState(true);
   const [displayImg, setDisplayImg] = useState(true);
 
   const handleClick = () => {
-    setZoom((prev) => !prev);
+    setShowTextEffect((prev) => !prev);
   };
 
   useEffect(() => {
-    if (zoom) {
+    if (!showTextEffect) {
       const timeout = setTimeout(() => {
         setDisplayImg(!displayImg);
-      }, 1000);
+      }, 2000);
       return () => clearTimeout(timeout);
     }
-  }, [zoom]);
+  }, [showTextEffect]);
 
   return (
     <div className="landingPage">
@@ -37,7 +38,7 @@ function LandingPage() {
         alt=""
       /> */}
 
-      <div onClick={handleClick} style={zoom ? { display: "none" } : null} className="landingPage-start">
+      <motion.div animate={{ y: showTextEffect ? 0 : -1000 }} onClick={handleClick} style={displayImg ? null : { display: "none" }} className="landingPage-start">
         <div className="text-effect">
           <h1 className="neon" data-text="GTM">
             GTM
@@ -45,10 +46,10 @@ function LandingPage() {
           <div className="gradient"></div>
           <div className="spotlight"></div>
         </div>
-        <div class="wrapper">
+        <div className="wrapper">
           <h1>GOOD TECH MIND</h1>
         </div>
-      </div>
+      </motion.div>
       <Sidebar />
     </div>
   );

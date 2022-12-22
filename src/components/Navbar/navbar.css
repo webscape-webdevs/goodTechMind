@@ -1,0 +1,23 @@
+.navbar {
+  z-index: 9;
+  position: absolute;
+  margin: 40px;
+  left: 15vw;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-options {
+  display: flex;
+  margin-right: 40px;
+  font-size: 20px;
+}
+
+.navbar-options > a {
+  text-decoration: none;
+  color: white;
+  margin-right: 40px;
+}

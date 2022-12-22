@@ -7,8 +7,14 @@
   justify-content: center;
 }
 
+.backgroundImage {
+  position: absolute;
+  z-index: -3;
+}
+
 .overlay {
   position: absolute;
+  z-index: -2;
   width: 100%;
   height: 100%;
   top: 0;
@@ -16,13 +22,134 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.landingPage-bgVideo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.landingPage-logoImage {
+/* .landingPage-logoImage {
   z-index: 10;
   position: absolute;
+} */
+
+.landingPage-start {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-effect {
+  overflow: hidden;
+  position: relative;
+  filter: contrast(110%) brightness(190%);
+}
+.neon {
+  position: relative;
+  background: black;
+  color: transparent;
+}
+.neon::before,
+.neon::after {
+  content: attr(data-text);
+  color: white;
+  filter: blur(0.01em);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.neon::after {
+  mix-blend-mode: difference;
+}
+.gradient,
+.spotlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+.gradient {
+  background: linear-gradient(45deg, red, blue);
+  mix-blend-mode: multiply;
+}
+.spotlight {
+  animation: light 5s infinite linear;
+  background: radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%, radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
+  top: -100%;
+  left: -100%;
+  mix-blend-mode: color-dodge;
+}
+@keyframes light {
+  100% {
+    transform: translate3d(50%, 50%, 0);
+  }
+}
+.neon {
+  font: 700 320px "Lato", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+.neon:focus {
+  outline: none;
+  border: 1px dotted white;
+}
+body {
+  background: black;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+/* TAG LINE  */
+
+@font-face {
+  font-family: "ubuntu";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Lato Light Italic"), local("Lato-LightItalic"), url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2) format("woff2");
+}
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #353535;
+  font-family: "ubuntu", Arial, sans-serif;
+  overflow-x: hidden;
+  display: grid;
+  place-items: center;
+}
+a {
+  text-decoration: none;
+  color: #9ca0b1;
+}
+.wrapper {
+  text-align: center;
+}
+.wrapper h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 92px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, red, blue);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }

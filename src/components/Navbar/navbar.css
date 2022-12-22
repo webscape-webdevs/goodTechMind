@@ -1,8 +1,9 @@
 .navbar {
-  z-index: 9;
+  z-index: -1;
   position: absolute;
   margin: 40px;
   left: 15vw;
+  top: 0;
 }
 .navbar-container {
   display: flex;

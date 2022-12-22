@@ -26,7 +26,10 @@ function Navbar() {
             </span>
           </>
         ) : (
-          <Link to="/loginSignup"> Login / Signup </Link>
+          <>
+            <Link to="/"> Our Vision </Link>
+            <Link to="/"> Contact </Link>
+          </>
         )}
         {sessionUser.role === "admin" && <Link to="/dasboard">Dashboard</Link>}
       </div>

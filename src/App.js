@@ -9,7 +9,7 @@ import LoginSignup from "./containers/LoginSignup/LoginSignup";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/loginSignup" element={<LoginSignup />} />

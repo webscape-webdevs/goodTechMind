@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./sidebar.css";
 import { motion } from "framer-motion";
-import logo from "../../sampleImages/goodTechMind.jpg";
+import logo from "../../sampleImages/goodTechMind.png";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,14 +1,16 @@
 .navbar {
-  z-index: -1;
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   margin: 40px;
-  left: 15vw;
+  left: 0;
   top: 0;
 }
 .navbar-container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  position: absolute;
+  left: 800px;
 }
 
 .navbar-options {

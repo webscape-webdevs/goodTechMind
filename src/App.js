@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import AdminRoutes from "./components/AdminComponents/AdminRoutes";
 import Navbar from "./components/Navbar/Navbar";
 import UserRoutes from "./components/UserComponents/UserRoutes";
-import LandingPage from "./containers/LandingPage/LandingPage";
+import LandingPage from "./containers/LandingPage/LandingPage.jsx";
 import LoginSignup from "./containers/LoginSignup/LoginSignup";
 
 function App() {

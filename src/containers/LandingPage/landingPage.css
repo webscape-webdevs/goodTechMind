@@ -1,31 +1,35 @@
 .landingPage {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+}
+
+.landingPage-content {
+  width: 100%;
+  display: flex;
+  background: url("../../sampleImages/dummyImage.png") no-repeat;
+}
+
+.landingPage-content-main {
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
+.landingPage-content-sidebar {
+  width: 20%;
+}
+
+.test {
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 2px red solid; */
+}
 .backgroundImage {
-  position: absolute;
   z-index: -3;
-}
-
-.overlay {
-  position: absolute;
-  z-index: -2;
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 100vh;
 }
-
-/* .landingPage-logoImage {
-  z-index: 10;
-  position: absolute;
-} */
 
 .landingPage-start {
   width: 100vw;
@@ -35,11 +39,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
+  position: absolute;
 }
 
 .text-effect {
   overflow: hidden;
   position: relative;
+  display: flex;
+
   filter: contrast(110%) brightness(190%);
 }
 .neon {
@@ -60,7 +68,33 @@
 .neon::after {
   mix-blend-mode: difference;
 }
-.gradient,
+.gradient-G {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+.gradient-T {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+.gradient-M {
+  position: absolute;
+  top: 0;
+  left: 450px;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10;
+}
 .spotlight {
   position: absolute;
   top: 0;
@@ -70,13 +104,25 @@
   pointer-events: none;
   z-index: 10;
 }
-.gradient {
-  background: linear-gradient(45deg, red, blue);
+.gradient-G {
+  width: 248.91px;
+  background: linear-gradient(45deg, red, #ff0000, #ff6a00);
+  mix-blend-mode: multiply;
+}
+.gradient-T {
+  width: 195.47px;
+  background: linear-gradient(45deg, orange, orange, #00a1ff);
+  mix-blend-mode: multiply;
+}
+.gradient-M {
+  width: 266.56px;
+  background: linear-gradient(45deg, #00a1ff, #00a1ff, #ceedff);
   mix-blend-mode: multiply;
 }
 .spotlight {
   animation: light 5s infinite linear;
-  background: radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%, radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%;
+  /* background: radial-gradient(circle, white, transparent 25%) 0 0 / 25% 25%, radial-gradient(circle, white, black 25%) 50% 50% / 12.5% 12.5%; */
+  background: radial-gradient(circle, white, transparent 25%) 50% 20% / 40% 20%, radial-gradient(circle, white, black 25%) 40% 20% / 30.5% 20%;
   top: -100%;
   left: -100%;
   mix-blend-mode: color-dodge;
@@ -107,6 +153,10 @@ body {
 
 /* TAG LINE  */
 
+.tagLine {
+  display: flex;
+}
+
 @font-face {
   font-family: "ubuntu";
   font-style: italic;
@@ -126,17 +176,63 @@ a {
   text-decoration: none;
   color: #9ca0b1;
 }
-.wrapper {
+.wrapper-good,
+.wrapper-tech,
+.wrapper-mind {
   text-align: center;
 }
-.wrapper h1 {
+.wrapper-good h1 {
   margin: 0;
+  margin-right: 10px;
+  margin-left: 10px;
   color: #fff;
-  font-size: 92px;
+  font-size: 70px;
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Josefin Sans", sans-serif;
-  background: linear-gradient(to right, red, blue);
+  background: linear-gradient(to right, red, red, #ff5200);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+.wrapper-tech h1 {
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #ff8100, orange, #ffe900);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+.wrapper-mind h1 {
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #00a1ff, #00a1ff, #0056ff);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;

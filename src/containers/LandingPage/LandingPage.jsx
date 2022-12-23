@@ -17,16 +17,65 @@ function LandingPage() {
     if (!showTextEffect) {
       const timeout = setTimeout(() => {
         setDisplayImg(!displayImg);
-      }, 2000);
+      }, 1000);
       return () => clearTimeout(timeout);
     }
   }, [showTextEffect]);
 
   return (
     <div className="landingPage">
-      <div className="overlay"></div>
-      <img className="backgroundImage" src={Hero} alt="" />
-      <Navbar />
+      <motion.div className="landingPage-start" animate={{ y: showTextEffect ? 0 : -1000 }} onClick={handleClick} style={displayImg ? null : { display: "none", zIndex: "-20", position: "absolute" }}>
+        <div className="text-effect">
+          <div className="text-effect-G">
+            <h1 className="neon" data-text="G">
+              G
+            </h1>
+            <div className="gradient-G"></div>
+            <div className="spotlight"></div>
+          </div>
+          <div className="text-effect-T">
+            <h1 className="neon" data-text="T">
+              T
+            </h1>
+            <div className="gradient-T"></div>
+            <div className="spotlight"></div>
+          </div>
+          <div className="text-effect-M">
+            <h1 className="neon" data-text="M">
+              M
+            </h1>
+            <div className="gradient-M"></div>
+            <div className="spotlight"></div>
+          </div>
+        </div>
+        <div className="tagLine">
+          <div className="wrapper-good">
+            <h1>GOOD</h1>
+          </div>
+          <div className="wrapper-tech">
+            <h1>TECH</h1>
+          </div>
+          <div className="wrapper-mind">
+            <h1>MIND</h1>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* <div className="overlay"></div>
+      <img className="backgroundImage" src={Hero} alt="" /> */}
+
+      <div className="landingPage-content" style={displayImg ? { height: "100vh" } : null}>
+        <div className="landingPage-content-sidebar">
+          <Sidebar toggle={displayImg} />
+        </div>
+        <div className="landingPage-content-main">
+          <Navbar />
+          <div className="test"></div>
+          <div className="test"></div>
+          <div className="test"></div>
+          <div className="test"></div>
+        </div>
+      </div>
 
       {/* <div className="overlay"></div>
       <video className="landingPage-bgVideo" src={video} autoPlay loop muted /> */}
@@ -37,20 +86,6 @@ function LandingPage() {
         src={Logo}
         alt=""
       /> */}
-
-      <motion.div animate={{ y: showTextEffect ? 0 : -1000 }} onClick={handleClick} style={displayImg ? null : { display: "none" }} className="landingPage-start">
-        <div className="text-effect">
-          <h1 className="neon" data-text="GTM">
-            GTM
-          </h1>
-          <div className="gradient"></div>
-          <div className="spotlight"></div>
-        </div>
-        <div className="wrapper">
-          <h1>GOOD TECH MIND</h1>
-        </div>
-      </motion.div>
-      <Sidebar />
     </div>
   );
 }

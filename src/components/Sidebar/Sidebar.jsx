@@ -4,6 +4,8 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import logo from "../../sampleImages/goodTechMind.png";
 import { Link } from "react-router-dom";
 import { BsToggleOff, BsToggleOn } from "react-icons/bs";
+import DayButton from "../../sampleImages/dayButton2.png";
+import NightButton from "../../sampleImages/nightButton2.png";
 
 function Sidebar({ toggleProgressBar, theme, setTheme, hero, about, services, team, clients, clientReviews, contactUs }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +42,8 @@ function Sidebar({ toggleProgressBar, theme, setTheme, hero, about, services, te
       <motion.div onHoverStart={handleToggleSidebar} onHoverEnd={handleToggleSidebar} animate={{ width: isOpen ? "6vw" : "6vw" }} className="sidebar">
         <div className="sidebar-main">
           <img style={{ width: "100px" }} src={logo} alt="" />
-          <span onClick={toggleTheme}>{theme === "dark-theme" ? <BsToggleOff size="40" style={{ color: "white" }} /> : <BsToggleOn size="40" style={{ color: "white" }} />}</span>
+          {/* <span onClick={toggleTheme}>{theme === "dark-theme" ? <BsToggleOff size="40" style={{ color: "white" }} /> : <BsToggleOn size="40" style={{ color: "white" }} />}</span> */}
+          <span onClick={toggleTheme}>{theme === "dark-theme" ? <img style={{ width: "70px" }} src={NightButton} alt="" /> : <img style={{ width: "70px" }} src={DayButton} alt="" />}</span>
           <div className="progress-bar">
             {!toggleProgressBar ? <motion.div className="progress-bar-line" style={{ scaleX }} /> : null}
             <div className="progress-bar-pointers">

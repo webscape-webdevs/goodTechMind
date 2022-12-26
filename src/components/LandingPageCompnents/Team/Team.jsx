@@ -13,7 +13,7 @@ function Team() {
 
   return (
     <div className="landingPage-team">
-      <span style={{ fontFamily: "Aeonic", fontWeight: "300", fontSize: "75px", color: "var(--main-heading)" }}>Meet Our Team</span>
+      <span style={{ fontFamily: "Aeonic", fontWeight: "800", fontSize: "75px", color: "var(--main-heading)" }}>Meet Our Team</span>
 
       <div className="landingPage-team-card">
         <Card props={teamMember} />

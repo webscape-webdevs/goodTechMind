@@ -37,7 +37,7 @@ function Navbar({ theme }) {
         ) : (
           <>
             {/* about */}
-            <Link to="/">
+            <Link to="/about">
               <AiFillInfoCircle size="30" style={{ color: "var(--btn-bg-color1)" }} />
             </Link>
             {/* contact */}

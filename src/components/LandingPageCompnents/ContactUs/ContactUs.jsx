@@ -17,7 +17,7 @@ export default function ContactUs() {
   };
   return (
     <div className="landingPage-contactUs">
-      <span style={{ fontFamily: "Aeonic", fontWeight: "300", fontSize: "75px", color: "var(--main-heading)" }}>Get In Touch !!</span>
+      <span style={{ fontFamily: "Aeonic", fontWeight: "800", fontSize: "75px", color: "var(--main-heading)", paddingBottom: "25px" }}>Get In Touch !!</span>
       <div className="landingPage-contactUs-container">
         <div className="landingPage-contactUs-container-left">
           <div className="landingPage-contactUs-container-left-text">

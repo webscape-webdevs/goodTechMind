@@ -28,6 +28,7 @@
   background: white;
   transform-origin: 0%;
   rotate: 90deg;
+  transform: scaleX(0) translateZ(0px);
 }
 
 .progress-bar-pointers {

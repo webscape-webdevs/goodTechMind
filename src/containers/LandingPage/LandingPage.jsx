@@ -10,6 +10,7 @@ import Clients from "../../components/LandingPageCompnents/Clients/Clients";
 import ClientReviews from "../../components/LandingPageCompnents/ClientReviews/ClientReviews";
 import ContactUs from "../../components/LandingPageCompnents/ContactUs/ContactUs";
 import { motion } from "framer-motion";
+import NeonButton from "../../components/NeonLightButton/NeonLightButton";
 
 function LandingPage() {
   const hero = useRef(null);
@@ -21,7 +22,7 @@ function LandingPage() {
   const contactUs = useRef(null);
   const [theme, setTheme] = useState("dark-theme");
   const [showTextEffect, setShowTextEffect] = useState(true);
-  const [displayImg, setDisplayImg] = useState(false);
+  const [displayImg, setDisplayImg] = useState(true);
 
   const handleClick = () => {
     setShowTextEffect((prev) => !prev);
@@ -80,7 +81,7 @@ function LandingPage() {
         </div>
       </motion.div>
 
-      <div className="landingPage-content" style={displayImg ? { height: "100vh" } : null}>
+      <div className="landingPage-content" style={displayImg ? { display: "none", height: "100vh", zIndex: "-20", position: "absolute" } : null}>
         <div className="landingPage-content-sidebar">
           <Sidebar
             toggleProgressBar={displayImg}
@@ -118,6 +119,7 @@ function LandingPage() {
           <section ref={contactUs} className="landingPage-sections">
             <ContactUs />
           </section>
+          <NeonButton />
         </div>
       </div>
     </div>

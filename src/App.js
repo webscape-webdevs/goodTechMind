@@ -5,7 +5,7 @@ import AdminRoutes from "./components/AdminComponents/AdminRoutes";
 import Navbar from "./components/Navbar/Navbar";
 import UserRoutes from "./components/UserComponents/UserRoutes";
 import LandingPage from "./containers/LandingPage/LandingPage.jsx";
-import LoginSignup from "./containers/LoginSignup/LoginSignup";
+import AboutPage from "./containers/AboutPage/AboutPage.jsx";
 
 function App() {
   return (
@@ -13,15 +13,7 @@ function App() {
       {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/loginSignup" element={<LoginSignup />} />
-
-        <Route element={<UserRoutes />}>
-          <Route path="/cart" element={<LandingPage />} />
-        </Route>
-
-        <Route element={<AdminRoutes />}>
-          <Route path="/dashboard" element={<LandingPage />} />
-        </Route>
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </BrowserRouter>
   );

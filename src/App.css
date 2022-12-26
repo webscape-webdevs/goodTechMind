@@ -1,0 +1,29 @@
+@font-face {
+  font-family: helvetica;
+  src: url(../public/Helvetica.ttf);
+}
+
+@font-face {
+  font-family: Aeonic;
+  src: url(../public/AeonikTRIAL-Regular.otf);
+}
+
+.dark-theme {
+  --main-heading: #009dff;
+  --para-color: white;
+  --btn-bg-color1: white;
+  --btn-bg-color2: #5f99be;
+  --btn-text-color: white;
+  --bg-color: black;
+  --bg-color2: #111b20;
+}
+
+.light-theme {
+  --main-heading: #009dff;
+  --para-color: #333;
+  --btn-bg-color1: #009dff;
+  --btn-bg-color2: #111b20;
+  --btn-text-color: white;
+  --bg-color: white;
+  --bg-color2: white;
+}

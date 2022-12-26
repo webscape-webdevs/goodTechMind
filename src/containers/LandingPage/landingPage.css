@@ -1,16 +1,17 @@
 .landingPage {
   width: 100vw;
   height: 100vh;
+  font-family: helvetica;
 }
 
 .landingPage-content {
   width: 100%;
   display: flex;
-  background: url("../../sampleImages/dummyImage.png") no-repeat;
+  background-color: var(--bg-color);
 }
 
 .landingPage-content-main {
-  width: 80%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,18 +19,17 @@
 
 .landingPage-content-sidebar {
   width: 20%;
+  position: absolute;
 }
 
-.test {
-  height: 100vh;
-  /* background-color: rgba(0, 0, 0, 0.7);
-  border-bottom: 2px red solid; */
-}
-.backgroundImage {
-  z-index: -3;
+.landingPage-sections {
+  height: 90vh;
   width: 100%;
-  height: 100vh;
+  display: flex;
+  margin-left: 15%;
 }
+
+/*--------------- Intro -----------------------------------------*/
 
 .landingPage-start {
   width: 100vw;
@@ -151,7 +151,7 @@ body {
   align-items: center;
 }
 
-/* TAG LINE  */
+/*--------------------Intro TAG LINE ----------------------- */
 
 .tagLine {
   display: flex;

@@ -1,0 +1,24 @@
+.landingPage-clientReviews {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  padding-left: 100px;
+  width: 80%;
+  text-align: justify;
+}
+
+.landingPage-contactUs-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.landingPage-contactUs-container-left {
+  display: flex;
+  width: 50%;
+}
+
+.landingPage-contactUs-container-right {
+  display: flex;
+  width: 50%;
+}

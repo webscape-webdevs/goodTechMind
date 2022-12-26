@@ -1,0 +1,48 @@
+.landingPage-hero {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.landingPage-hero-text {
+  width: 40%;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.landingPage-hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.landingPage-hero-image > img {
+  width: 650px;
+  height: 700px;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+.landingPage-hero-exploreButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  color: var(--btn-text-color);
+  background-color: var(--btn-bg-color2);
+  width: 200px;
+  height: 70px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.landingPage-hero-exploreButton:hover {
+  cursor: pointer;
+}
+
+.landingPage-hero-exploreButton > span {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,33 @@
+.landingPage-services {
+  display: flex;
+  margin-top: 150px;
+  padding-left: 100px;
+  width: 80%;
+  text-align: justify;
+}
+
+.landingPage-services-left {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.landingPage-services-right {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+}
+
+.landingPage-services-right-firstHalf {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding-left: 80px;
+}
+
+.landingPage-services-right-secondHalf {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding-left: 80px;
+}

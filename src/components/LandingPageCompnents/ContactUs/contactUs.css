@@ -1,3 +1,15 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .landingPage-contactUs {
   display: flex;
   flex-direction: column;
@@ -10,6 +22,29 @@
 
 .landingPage-contactUs-container-left {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.landingPage-contactUs-container-left-text {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  padding: 2vmax;
+  width: 70%;
+}
+
+.landingPage-contactUs-container-left-text-content {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.landingPage-contactUs-container-left-socials {
+  display: flex;
+  height: 50%;
+  width: 70%;
   justify-content: center;
 }
 
@@ -48,6 +83,7 @@
   outline: none;
   margin-top: 10px;
   background-color: var(--bg-color2);
+  color: var(--para-color);
 }
 
 .landingPage-contactUs-textArea > textarea {
@@ -61,6 +97,7 @@
   outline: none;
   margin-top: 10px;
   background-color: var(--bg-color2);
+  color: var(--para-color);
 }
 
 .contactForm > div > svg {

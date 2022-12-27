@@ -5,6 +5,7 @@
   padding-left: 100px;
   width: 80%;
   text-align: justify;
+  align-items: center;
 }
 
 .landingPage-contactUs-container {
@@ -13,12 +14,36 @@
   width: 100%;
 }
 
+.landingPage-clientReviews-titleSection {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
 .landingPage-contactUs-container-left {
   display: flex;
   width: 50%;
 }
 
-.landingPage-contactUs-container-right {
+.landingPage-clientReviews-title {
   display: flex;
-  width: 50%;
+}
+
+.landingPage-clientReviews-reviewSection {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.control-next.control-arrow:before {
+  border-left: 8px solid rgb(102, 102, 102) !important;
+}
+
+.control-prev.control-arrow:before {
+  border-right: 8px solid rgb(102, 102, 102) !important;
+}
+
+.control-dots .dot {
+  background: rgb(102, 102, 102) !important;
 }

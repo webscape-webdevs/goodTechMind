@@ -9,6 +9,11 @@ import Facebook from "../../sampleImages/facebook.png";
 import Instagram from "../../sampleImages/instagram.png";
 import Twitter from "../../sampleImages/twiter.png";
 import LinkedIn from "../../sampleImages/linkedin.png";
+import SampleProductSlider1 from "../../sampleImages/sampleProject1.png";
+import SampleProductSlider2 from "../../sampleImages/sampleProject2.png";
+import SampleProductSlider3 from "../../sampleImages/sampleProject3.png";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 function AboutPage({ theme, setTheme }) {
   const [name, setName] = useState("");
@@ -143,6 +148,29 @@ function AboutPage({ theme, setTheme }) {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* -------------------Section 4--------------------------- */}
+        <div className="about-section4">
+          <div className="about-vision">
+            <h1 style={{ color: "var(--para-color)", fontFamily: "helvetica", fontSize: "30px" }}>Our Vision</h1>
+          </div>
+          <div className="about-mission">
+            <h1 style={{ color: "var(--para-color)", fontFamily: "helvetica", fontSize: "30px" }}>Our Mission</h1>
+          </div>
+          <div className="about-productSlider">
+            <Carousel autoPlay="true" infiniteLoop="true">
+              <div>
+                <img style={{ width: "500px", borderRadius: "40px" }} src={SampleProductSlider1} alt="" />
+              </div>
+              <div>
+                <img style={{ width: "500px", borderRadius: "40px" }} src={SampleProductSlider2} alt="" />
+              </div>
+              <div>
+                <img style={{ width: "500px", borderRadius: "40px" }} src={SampleProductSlider3} alt="" />
+              </div>
+            </Carousel>
           </div>
         </div>
         <Footer />

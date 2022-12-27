@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: var(--bg-color);
 }
 
@@ -12,13 +12,14 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 1500px;
+  margin-top: 200px;
+  background-color: var(--bg-color);
 }
 
 .about-section1 {
   display: flex;
   width: 80%;
-  height: 30%;
+  height: 300px;
   justify-content: center;
 }
 
@@ -40,6 +41,10 @@
   border-radius: 40px;
   align-items: center;
   margin-left: 20px;
+}
+
+.about-section1-companyOverview > h1 {
+  margin-top: 20px;
 }
 
 .about-section2 {
@@ -136,7 +141,7 @@
   padding: 2vmax;
   padding-bottom: 3vmax;
   height: 100%;
-  width: 70%;
+  width: 100%;
   align-items: center;
 }
 
@@ -240,7 +245,6 @@ input[type="number"] {
   flex-direction: column;
   height: 50%;
   padding: 2vmax;
-  width: 90%;
 }
 
 .aboutPage-contactUs-container-left-text-content {
@@ -254,4 +258,62 @@ input[type="number"] {
   height: 50%;
   width: 70%;
   justify-content: center;
+  margin-top: 30px;
+}
+
+/* ------------Section 4---------------------- */
+
+.about-section4 {
+  width: 80%;
+  height: 500px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-vision {
+  width: 25%;
+  height: 320px;
+  box-shadow: 2px 2px 5px 2px #8080809c;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-vision > h1 {
+  margin-top: 20px;
+}
+
+.about-mission {
+  width: 25%;
+  height: 320px;
+  box-shadow: 2px 2px 5px 2px #8080809c;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-mission > h1 {
+  margin-top: 20px;
+}
+
+.about-productSlider {
+  width: 35%;
+  height: 320px;
+  box-shadow: 2px 2px 5px 2px #8080809c;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  width: 500px !important;
+  border-radius: 40px !important;
+}
+
+.thumbs-wrapper,
+.carousel-status {
+  display: none;
 }

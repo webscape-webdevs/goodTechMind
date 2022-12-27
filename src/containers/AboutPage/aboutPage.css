@@ -3,8 +3,16 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 100vh;
-  margin-top: 300px;
+  height: 100%;
+  background-color: var(--bg-color);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 1500px;
 }
 
 .about-section1 {
@@ -32,4 +40,218 @@
   border-radius: 40px;
   align-items: center;
   margin-left: 20px;
+}
+
+.about-section2 {
+  width: 80%;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-section2-statsCounter {
+  width: 150px;
+  height: 150px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.statsCounter-circle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: linear-gradient(180deg, #f71e0f, #f19b10, #3084f1fb);
+}
+
+.statsCounter-circleWhite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.statsCounter-circleWhite > h1 {
+  font-family: Aeonic;
+  font-size: 35px;
+  position: absolute;
+}
+
+.about-section2-statsCounter > h1 {
+  position: relative;
+  color: var(--para-color);
+  font-family: Aeonic;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 180px;
+}
+
+.about-section3 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 350px;
+}
+
+.about-section3-content {
+  width: 100%;
+  display: flex;
+}
+
+.about-section3-map {
+  width: 33%;
+}
+
+.about-section3-contactForm {
+  width: 33%;
+}
+
+.about-section3-communicationDetails {
+  width: 33%;
+}
+
+.aboutPage-contactUs-container-right {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+/* --------------Contact Form -------------------------------*/
+
+.aboutPage-contactForm {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 2vmax;
+  padding-bottom: 3vmax;
+  height: 100%;
+  width: 70%;
+  align-items: center;
+}
+
+.aboutPage-contactUs-input,
+.aboutPage-contactUs-textArea {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.aboutPage-contactUs-input > input {
+  padding: 1vmax 1vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 20px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+  margin-top: 10px;
+  background-color: var(--bg-color2);
+  color: var(--para-color);
+}
+
+.aboutPage-contactUs-textArea > textarea {
+  padding: 1vmax 1vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 20px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+  margin-top: 10px;
+  background-color: var(--bg-color2);
+  color: var(--para-color);
+}
+
+.contactForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.aboutPage-contactUs-exploreButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--btn-text-color);
+  background-color: var(--btn-bg-color2);
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.aboutPage-contactUs-exploreButton > span {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.submitButton:hover {
+  background-color: #3cb0fd;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ------------Communication Details----------------------- */
+
+.aboutPage-contactUs {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  width: 80%;
+  text-align: justify;
+  align-items: center;
+}
+
+.aboutPage-contactUs-container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.aboutPage-contactUs-container-left-text {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  padding: 2vmax;
+  width: 90%;
+}
+
+.aboutPage-contactUs-container-left-text-content {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.aboutPage-contactUs-container-left-socials {
+  display: flex;
+  height: 50%;
+  width: 70%;
+  justify-content: center;
 }

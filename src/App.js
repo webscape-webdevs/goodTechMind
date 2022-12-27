@@ -6,14 +6,16 @@ import Navbar from "./components/Navbar/Navbar";
 import UserRoutes from "./components/UserComponents/UserRoutes";
 import LandingPage from "./containers/LandingPage/LandingPage.jsx";
 import AboutPage from "./containers/AboutPage/AboutPage.jsx";
+import { useState } from "react";
 
 function App() {
+  const [theme, setTheme] = useState("dark-theme");
   return (
     <BrowserRouter>
       {/* <Navbar /> */}
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/" element={<LandingPage theme={theme} setTheme={setTheme} />} />
+        <Route path="/about" element={<AboutPage theme={theme} setTheme={setTheme} />} />
       </Routes>
     </BrowserRouter>
   );

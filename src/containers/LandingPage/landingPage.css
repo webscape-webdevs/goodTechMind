@@ -8,6 +8,7 @@
   width: 100%;
   display: flex;
   background-color: var(--bg-color);
+  justify-content: center;
 }
 
 .landingPage-content-main {

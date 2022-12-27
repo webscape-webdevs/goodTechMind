@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "./landingPage.css";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import Hero from "../../components/LandingPageCompnents/Hero/Hero";
 import About from "../../components/LandingPageCompnents/About/About";
 import Services from "../../components/LandingPageCompnents/Services/Services";
@@ -12,7 +13,7 @@ import ContactUs from "../../components/LandingPageCompnents/ContactUs/ContactUs
 import { motion } from "framer-motion";
 import NeonButton from "../../components/NeonLightButton/NeonLightButton";
 
-function LandingPage() {
+function LandingPage({ theme, setTheme }) {
   const hero = useRef(null);
   const about = useRef(null);
   const services = useRef(null);
@@ -20,7 +21,6 @@ function LandingPage() {
   const clients = useRef(null);
   const clientReviews = useRef(null);
   const contactUs = useRef(null);
-  const [theme, setTheme] = useState("dark-theme");
   const [showTextEffect, setShowTextEffect] = useState(true);
   const [displayImg, setDisplayImg] = useState(true);
 
@@ -119,7 +119,7 @@ function LandingPage() {
           <section ref={contactUs} className="landingPage-sections">
             <ContactUs />
           </section>
-          <NeonButton />
+          <Footer />
         </div>
       </div>
     </div>

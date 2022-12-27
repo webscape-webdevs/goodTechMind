@@ -12,8 +12,15 @@ import LinkedIn from "../../sampleImages/linkedin.png";
 import SampleProductSlider1 from "../../sampleImages/sampleProject1.png";
 import SampleProductSlider2 from "../../sampleImages/sampleProject2.png";
 import SampleProductSlider3 from "../../sampleImages/sampleProject3.png";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import ReactLogo from "../../sampleImages/reactLogo.png";
+import AngularLogo from "../../sampleImages/angularLogo.png";
+import NodejsLogo from "../../sampleImages/nodejsLogo.png";
+import PythonLogo from "../../sampleImages/pythonLogo.png";
+import Html5Logo from "../../sampleImages/html5Logo.png";
+import CssLogo from "../../sampleImages/cssLogo.png";
+import JavascriptLogo from "../../sampleImages/javascriptLogo.png";
 
 function AboutPage({ theme, setTheme }) {
   const [name, setName] = useState("");
@@ -40,6 +47,20 @@ function AboutPage({ theme, setTheme }) {
           <div className="about-section1-companyOverview">
             <h1 style={{ color: "#fca61f", fontFamily: "helvetica", fontSize: "30px" }}>Company Overview</h1>
           </div>
+        </div>
+
+        <div className="marqueeEffect">
+          <marquee>
+            <div className="marqueeEffect-logo">
+              <img style={{ width: "100px", marginRight: "100px" }} src={ReactLogo} alt="" />
+              <img style={{ width: "90px", marginRight: "100px" }} src={AngularLogo} alt="" />
+              <img style={{ width: "200px", marginRight: "100px" }} src={NodejsLogo} alt="" />
+              <img style={{ width: "90px", marginRight: "100px" }} src={PythonLogo} alt="" />
+              <img style={{ width: "100px", marginRight: "100px" }} src={Html5Logo} alt="" />
+              <img style={{ width: "80px", marginRight: "100px" }} src={CssLogo} alt="" />
+              <img style={{ width: "90px", marginRight: "100px" }} src={JavascriptLogo} alt="" />
+            </div>
+          </marquee>
         </div>
 
         {/* -------------------Section 2--------------------------- */}

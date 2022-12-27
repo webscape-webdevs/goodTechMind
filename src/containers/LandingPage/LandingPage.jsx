@@ -98,7 +98,7 @@ function LandingPage({ theme, setTheme }) {
         </div>
         <div className="landingPage-content-main">
           <Navbar theme={theme} />
-          <section ref={hero} className="landingPage-sections">
+          <section ref={hero} className="landingPage-sections-hero">
             <Hero />
           </section>
           <section ref={about} className="landingPage-sections">

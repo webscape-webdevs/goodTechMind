@@ -30,6 +30,14 @@
   margin-left: 15%;
 }
 
+.landingPage-sections-hero {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  padding-left: 15%;
+  background-image: var(--bg-image);
+  background-size: cover;
+}
 /*--------------- Intro -----------------------------------------*/
 
 .landingPage-start {

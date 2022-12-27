@@ -35,7 +35,16 @@
   width: 100%;
   display: flex;
   padding-left: 15%;
-  background-image: var(--bg-image);
+  background-image: var(--bg-heroBackground);
+  background-size: cover;
+}
+
+.landingPage-sections-services {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  padding-left: 15%;
+  background-image: var(--bg-servicesBackground);
   background-size: cover;
 }
 /*--------------- Intro -----------------------------------------*/

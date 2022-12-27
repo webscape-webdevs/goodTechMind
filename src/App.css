@@ -10,6 +10,8 @@
 
 .dark-theme {
   --main-heading: #009dff;
+  --main-heading2: #ffff;
+  --main-heading3: #fca61f;
   --para-color: white;
   --btn-bg-color1: white;
   --btn-bg-color2: #5f99be;
@@ -20,11 +22,14 @@
 
 .light-theme {
   --main-heading: #009dff;
+  --main-heading2: black;
+  --main-heading3: #fca61f;
   --para-color: #333;
   --btn-bg-color1: #009dff;
   --btn-bg-color2: #111b20;
   --btn-text-color: white;
   --bg-color: white;
   --bg-color2: white;
-  --bg-image: url(./sampleImages/heroBackground.PNG);
+  --bg-heroBackground: url(./sampleImages/heroBackground.PNG);
+  --bg-servicesBackground: url(./sampleImages/servicesBackground.PNG);
 }

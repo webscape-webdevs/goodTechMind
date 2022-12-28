@@ -47,6 +47,24 @@
   background-image: var(--bg-servicesBackground);
   background-size: cover;
 }
+
+.landingPage-sections-clientReview {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  padding-left: 15%;
+  background-image: var(--bg-clientReviewBackground);
+  background-size: cover;
+}
+
+.landingPage-sections-team {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  padding-left: 15%;
+  background-image: var(--bg-teamBackground);
+  background-size: cover;
+}
 /*--------------- Intro -----------------------------------------*/
 
 .landingPage-start {

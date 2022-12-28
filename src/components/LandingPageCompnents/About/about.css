@@ -23,3 +23,7 @@
   flex-direction: column;
   text-align: justify;
 }
+
+.landingPage-about-text-title {
+  display: flex;
+}

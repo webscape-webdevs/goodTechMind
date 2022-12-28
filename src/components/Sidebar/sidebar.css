@@ -53,6 +53,10 @@
   /* margin-top: 410px; */
 }
 
+.progress-bar-pointers ul li {
+  display: flex;
+}
+
 .progress-bar-pointers ul li a {
   text-decoration: none;
   color: white;

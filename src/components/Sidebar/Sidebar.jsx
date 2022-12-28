@@ -39,7 +39,7 @@ function Sidebar({ toggleProgressBar, theme, setTheme, hero, about, services, te
 
   return (
     <>
-      <motion.div onHoverStart={handleToggleSidebar} onHoverEnd={handleToggleSidebar} animate={{ width: isOpen ? "6vw" : "6vw" }} className="sidebar">
+      <motion.div onHoverStart={handleToggleSidebar} onHoverEnd={handleToggleSidebar} animate={{ width: isOpen ? "15vw" : "6vw" }} className="sidebar">
         <div className="sidebar-main">
           <img style={{ width: "100px" }} src={logo} alt="" />
           {/* <span onClick={toggleTheme}>{theme === "dark-theme" ? <BsToggleOff size="40" style={{ color: "white" }} /> : <BsToggleOn size="40" style={{ color: "white" }} />}</span> */}

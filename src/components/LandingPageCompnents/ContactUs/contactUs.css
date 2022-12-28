@@ -13,7 +13,7 @@ input[type="number"] {
 .landingPage-contactUs {
   display: flex;
   flex-direction: column;
-  margin-top: 90px;
+  margin-top: 150px;
   padding-left: 100px;
   width: 80%;
   text-align: justify;

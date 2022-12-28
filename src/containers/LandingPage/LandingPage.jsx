@@ -107,13 +107,13 @@ function LandingPage({ theme, setTheme }) {
           <section ref={services} className="landingPage-sections-services">
             <Services />
           </section>
-          <section ref={team} className="landingPage-sections">
+          <section ref={team} className="landingPage-sections-team">
             <Team />
           </section>
           <section ref={clients} className="landingPage-sections">
             <Clients />
           </section>
-          <section ref={clientReviews} className="landingPage-sections">
+          <section ref={clientReviews} className="landingPage-sections-clientReview">
             <ClientReviews />
           </section>
           <section ref={contactUs} className="landingPage-sections">

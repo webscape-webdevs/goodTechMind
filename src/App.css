@@ -32,4 +32,6 @@
   --bg-color2: white;
   --bg-heroBackground: url(./sampleImages/heroBackground.PNG);
   --bg-servicesBackground: url(./sampleImages/servicesBackground.PNG);
+  --bg-clientReviewBackground: url(./sampleImages/clientReviewBackground.PNG);
+  --bg-teamBackground: url(./sampleImages/teamBackground.PNG);
 }

@@ -25,55 +25,44 @@ function Navbar({ theme }) {
         <Link to="/">
           <RiHome5Fill size="30" style={{ color: "var(--btn-bg-color1)" }} />
         </Link>
-        {sessionUser._id ? (
-          <>
-            <Link to="/cart"> Cart </Link>
-            <Link to="/profile"> Profile </Link>
-            <Link to="/myOrders"> Orders </Link>
-            <span style={{ cursor: "pointer" }} onClick={handleLogout}>
-              Logout
-            </span>
-          </>
-        ) : (
-          <>
-            {/* about */}
-            <Link to="/about">
-              <AiFillInfoCircle size="30" style={{ color: "var(--btn-bg-color1)" }} />
-            </Link>
-            {/* contact */}
-            <Link to="/">
-              <RiCustomerService2Fill size="30" style={{ color: "var(--btn-bg-color1)" }} />
-            </Link>
-            {/* blog */}
-            <Link to="/">
-              <FaBlogger size="30" style={{ color: "var(--btn-bg-color1)" }} />
-            </Link>
-            {/* career */}
-            <Link to="/">
-              <img src={theme === "dark-theme" ? Career2 : Career3} alt="" style={{ width: "30px" }} />
-            </Link>
-            {/* product */}
-            <Link to="/">
-              <RiBriefcase4Fill size="30" style={{ color: "var(--btn-bg-color1)" }} />
-            </Link>
-            {/* service and maintenance */}
-            <Link to="/">
-              <MdDesignServices size="30" style={{ color: "var(--btn-bg-color1)" }} />
-            </Link>
-            {/* employees */}
-            <Link to="/">
-              <RiTeamFill size="30" style={{ color: "var(--btn-bg-color1)" }} />
-            </Link>
-            {/* team */}
-            <Link to="/">
-              <RiTeamFill size="30" style={{ color: "var(--btn-bg-color1)" }} />
-            </Link>
-            {/* upcomming */}
-            <Link to="/">
-              <MdUpcoming size="30" style={{ color: "var(--btn-bg-color1)" }} />
-            </Link>
-          </>
-        )}
+
+        {/* about */}
+        <Link to="/about">
+          <AiFillInfoCircle size="30" style={{ color: "var(--btn-bg-color1)" }} />
+        </Link>
+        {/* contact */}
+        <Link to="/contact">
+          <RiCustomerService2Fill size="30" style={{ color: "var(--btn-bg-color1)" }} />
+        </Link>
+        {/* blog */}
+        <Link to="/">
+          <FaBlogger size="30" style={{ color: "var(--btn-bg-color1)" }} />
+        </Link>
+        {/* career */}
+        <Link to="/career">
+          <img src={theme === "dark-theme" ? Career2 : Career3} alt="" style={{ width: "30px" }} />
+        </Link>
+        {/* product */}
+        <Link to="/">
+          <RiBriefcase4Fill size="30" style={{ color: "var(--btn-bg-color1)" }} />
+        </Link>
+        {/* service and maintenance */}
+        <Link to="/">
+          <MdDesignServices size="30" style={{ color: "var(--btn-bg-color1)" }} />
+        </Link>
+        {/* employees */}
+        <Link to="/">
+          <RiTeamFill size="30" style={{ color: "var(--btn-bg-color1)" }} />
+        </Link>
+        {/* team */}
+        <Link to="/">
+          <RiTeamFill size="30" style={{ color: "var(--btn-bg-color1)" }} />
+        </Link>
+        {/* upcomming */}
+        <Link to="/">
+          <MdUpcoming size="30" style={{ color: "var(--btn-bg-color1)" }} />
+        </Link>
+
         {sessionUser.role === "admin" && <Link to="/dasboard">Dashboard</Link>}
       </div>
     );
